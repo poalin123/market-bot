@@ -4,9 +4,8 @@ import requests
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
-TOKEN = os.getenv("8566316598:AAGIogEV1Yduonc06ElZjzYwyoW86jpBr5g")
-TWELVE_DATA_API_KEY = os.getenv("2eced3d788e24f03818e17d5b79c7db4")
-
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TWELVE_DATA_API_KEY = os.getenv("TWELVE_DATA_API_KEY")
 
 def get_crypto_prices():
     url = "https://api.coingecko.com/api/v3/coins/markets"
